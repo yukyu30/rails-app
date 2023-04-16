@@ -1,11 +1,10 @@
 inherit_from: .rubocop_todo.yml
 
-# 追加した規約ファイル読込
 require:
   - rubocop-rails
 
 AllCops:
-  # Rubyバージョン指定
+  # Ruby, Railsバージョン指定
   TargetRubyVersion: 2.6
   TargetRailsVersion: 7.0
   # 除外
@@ -34,7 +33,7 @@ Documentation:
 ClassAndModuleChildren:
   Enabled: false
 
-# 文字リテラルのイミュータブル宣言を無視（freezeになるのはRuby3以降）
+# 文字リテラルのイミュータブル宣言を無視
 Style/FrozenStringLiteralComment:
   Enabled: false
 
